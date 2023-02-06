@@ -29,7 +29,7 @@ class Pusher {
         }
 
         const constraints = {
-            video: { width: { exact: 1280 }, height: { exact: 720 } },
+            video: { width: { exact: 640 }, height: { exact: 480 } },
             audio: {
                 channelCount:2,
                 sampleRate:48000,
@@ -43,7 +43,7 @@ class Pusher {
                 console.error("video encoder " + error);
             }
         });
-        this.vencoder_.configure({ codec: 'vp8', width: 1289, height: 720 });
+        this.vencoder_.configure({ codec: 'vp8', width: 649, height: 480 });
 
        
 
